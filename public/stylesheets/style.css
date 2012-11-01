@@ -1,6 +1,8 @@
 body {
 	background-color:#333333;
 	color:#333333;
+	/ background-image:url(/images/page_new.jpg);
+	/ background-repeat:repeat-y;
 	font-family:Arial;
 	font-size:12px;
 	text-align:center;

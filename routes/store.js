@@ -1,7 +1,7 @@
 // handler for homepage
 exports.home = function(req, res) {
 	// if user is not logged in, ask them to login
-	if (typeof req.session.username == 'undefined') res.render('home', { title: 'CROWBAR Console'});
+	if (typeof req.session.username == 'undefined') res.render('home', { title: 'CROWBAR Console', menuTabs: ['Home', 'Options', 'Test', 'Omicron', 'Gamma'] });
 	// if user is logged in already, take them straight to the items list
 	else res.redirect('/');
 };

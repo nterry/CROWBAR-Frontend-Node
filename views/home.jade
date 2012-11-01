@@ -2,26 +2,16 @@
     include header
     
     #menulinks
-        a(href='/')
-            span Home
-        .menulines
-        
-        a(href='#') 
-            span Services
-        .menulines
-
-        a(href='#') 
-            span Pricing
-        .menulines
-
-        a(href='#') 
-            span Contact Us
-        .menulines
+        - for (var menuTab in menuTabs)
+            a(href='/')
+                span #{menuTabs[menuTab]}
+            .menulines
 
     #mainarea
         #contentarea
             h2 Welcome!
             .content
                 |CELESTIAL is a CSS template that is free and fully standards compliant.
+                
 
     include footer
